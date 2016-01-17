@@ -9,7 +9,7 @@ A Ruby client library that uses AWS IoT over MQTT protocol
   1. cert.pem
   2. privateKey.pem
   3. rootCA.pem
-3. Run `iotthing` with two arguments listed below. E.g., `iotthing "Garage_Door" "<subdomain>"
+3. Run `iotthing` with two arguments listed below. E.g., `iotthing "Garage_Door" "your subdomain"
   1. The name of your thing. Should coordinate to a thing already set up on AWS IoT.
   2. Your subdomain on AWS IoT. Obtain this by running `aws iot describe-endpoint` on the AWS CLI.
   
