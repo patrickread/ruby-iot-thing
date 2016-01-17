@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require_relative "../lib/controllers/thing_controller"
+
+# The first argument should be the thing name
+# The second argument should be your AWS IoT Subdomain. e.g., [subdomain].iot.us-east-1.amazonaws.com
+# You can find with the command line: `aws iot describe-endpoint`
+garage_door = ThingController.new(ARGV[0], ARGV[1])
+garage_door.subscribe_for_updates
